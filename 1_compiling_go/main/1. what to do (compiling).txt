@@ -1,3 +1,5 @@
 untuk melakukan 'compile' terhadap aSourceFile.go dan membuat sebuah "statically linked executable ", 
 kita perlu menjalankan command berikut di terminal:
-$ go build aSourceFile.go
+$ go build aSourceFile.go -> melakukan compile/build
+$ aSourceFile
+This is a sample Go program!

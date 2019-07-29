@@ -1,0 +1,9 @@
+Untuk menjalanka aSourceFile.go tanpa perlu membuat executable file, 
+kita cukup menjalankan command berikut:
+
+$ go run aSourceFile.go
+{output}
+This is a sample Go program!
+
+
+#Hal ini membuat Go terlihat seperti Python, Ruby, dan Perl ya? :)
