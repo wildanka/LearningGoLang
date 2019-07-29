@@ -6,8 +6,7 @@ package main
 //Package fmt implements formatted I/O with functions analogous to C's printf and scanf. The format 'verbs' are derived from C's but are simpler.
 //source : https://golang.org/pkg/fmt/
 import(
-	"fmt"
-	"os"
+	"fmt" //jika kita hapus package yang tidak digunakan (package os), maka semua akan berjalan dengan normal
 )
 
 // di kasus ini jika file packageNotUsed.go kita execute (dengan go run packageNotUsed.go / bukan compile) maka kita akan mendapatkan pesan error sebagai berikut:
