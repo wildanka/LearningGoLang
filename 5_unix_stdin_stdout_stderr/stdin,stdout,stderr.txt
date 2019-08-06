@@ -1,0 +1,14 @@
+Setiap OS Unix, memiliki 3 files yang selalu terbuka pada setiap OS terebut melakukan processing. Seperti yang anda ketahui unix menganggap semuanya adalah file, bahkan printer dan mouse.
+Unix menggunakan "file descriptors", yang merupakan bilangan bulat positif (Positif Integer Values), sebagai representasi internal untuk mengakses semua file yang terbuka (aktif) yang mana akan lebih memduahkan ketimbang menggunakan paths yang panjang (tentunya bagi komputer)
+
+secara default, semua Sistem Unix mendukung filename special dan standar (special and standard filenames) yaitu: "/dev/stdin", "/dev/stdout", dan "/dev/stderr", ketiganya juga bisa diakses melalui "file descriptors" nilai masing-masingnya yaitu 0, 1, dan 2 
+Ketiga "file descriptors" juga disebut standard input, standard output, dan standard error.
+
+sebagai tambahan: 
+file descriptors 0 bisa diakses sebagai /dev/fd/0 pada mesin dengan OS macOS dan /dev/fd/0 & /dev/pts/0 untuk mesin dengan OS Debian dan Linux.
+
+Go menggunakan 
+os.Stdin untuk mengakses 'standard input', 
+os.Stdout untuk mengakses 'standard output', 
+os.Stderr untuk mengakses 'standard error', 
+meskipun Anda tetap bisa menggunakan /dev/stdin, /dev/stdout, dan /dev/stder, atau 'file descriptors value' lain yang berkaitan untuk mengakses perangkat. namun jauh lebih baik, aman dan portable untuk tetap menggunakan os.Stdin, os.Stdout, dan os.Stderr mengikuti standar yang ditawarkan oleh Go.
