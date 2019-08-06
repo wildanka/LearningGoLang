@@ -1,0 +1,15 @@
+Terdapat 3 cara untuk mendapatkan (acquire) inputan dari user, yaitu:
+   1. dengan membaca "command-line arguments" dari sebuah program
+   2. dengan meminta inputan dari user
+   3. dengan membaca "external files"
+
+Perbedaan := dan =\
+pada GoLang := disebut sebagai "Short Assignment Statement"
+:= sama artinya dengan 
+var namaVariable string(inferred type) = "value stringnya" 
+var namaVariable int(inferred type) = 1234
+*NOTES : inferred type artinya compiler akan menentukan tipe datanya ketika proses kompilasi nanti, programmer tidak perlu repot menentukan tipe datanya lagi ^^
+
+
+Bagaimana dengan var?
+keyword var biasanya digunakan untuk mendeklarasikan variable global di dalam Golang, var juga digunakan untuk mendeklarasikan variable tanpa nilai awal (initial value). Alasan mengapa hal ini dilakukan adalah karena setiap "statement" yang berada di luar function harus dimulai dengan keyword seperti "func" atau "var". artinya "Short Assignment Statement" tidak bisa digunakan di luar function, karena tidak tersedia disana ^^ (SAS hanya bisa digunakan di dalam function).
