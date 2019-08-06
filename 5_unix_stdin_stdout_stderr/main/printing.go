@@ -17,16 +17,8 @@ func main(){
 	fmt.Print(v1, " ", v2, " ", v3, " ", v4, "\n")
 	fmt.Printf("%s%d %s %s\n", v1, v2, v3, v4)
 
-	//akan menghasilkan 
-	/*
-	$ go run printing.go
- 	  123123Have a nice day
-	  abc
-	  123 123 Have a nice day
-	   abc
-	  123 123 Have a nice day
-	   abc
-	  123123 Have a nice day
-	   abc
+	/* 
+		ada juga fmt.Sprintln(), fmt.Sprint(), fmt.Sprintf() (S variant) -> untuk membuat strings berdasarkan format yang diberikan
+		and fmt.Fprintln(), fmt.Fprint(), fmt.Fprintf() (F variant)  -> untuk menulis ke files menggunakan sebuah 'io.writer'
 	*/
 }
