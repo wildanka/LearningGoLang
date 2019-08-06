@@ -1,4 +1,4 @@
-Untuk menjalanka aSourceFile.go tanpa perlu membuat executable file, 
+Untuk menjalankan aSourceFile.go tanpa perlu membuat executable file, 
 kita cukup menjalankan command berikut:
 
 $ go run aSourceFile.go
