@@ -1,0 +1,7 @@
+untuk mendownload external package kita jalankan perintah berikut:
+   go get -v github.com/mactsouk/go/simpleGitHub
+
+maka terminal anda akan menampilkan:
+	$ go get -v github.com/mactsouk/go/simpleGitHub
+	github.com/mactsouk/go (download)
+	github.com/mactsouk/go/simpleGitHub

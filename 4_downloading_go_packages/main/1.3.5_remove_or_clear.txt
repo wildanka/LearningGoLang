@@ -1,0 +1,15 @@
+kita bisa menghapus "intermediary files" dari package yang telah kita download
+
+$ go clean -i -v -x github.com/mactsouk/go/simpleGitHub
+  cd C:\Users\DAN\go\src\github.com\mactsouk\go\simpleGitHub
+  rm -f simpleGitHub.test simpleGitHub.test.exe
+  rm -f C:\Users\DAN\go\pkg\windows_amd64\github.com\mactsouk\go\simpleGitHub.a
+
+kita juga bisa menghapus keseluruhan Go Package yang telah kita download (simpan secara lokal)
+dengan perintah rm(1) pada unix setelah kita melakukan go clean
+ 
+$ rm -rf ~/go/src/github.com/mactsouk/go/simpleGitHub
+
+sehingga perintah yang barusan telah kita coba adalah sebagai berikut :
+(1)   $ go clean -i -v -x github.com/mactsouk/go/simpleGitHub
+(2)   $ rm -rf ~/go/src/github.com/mactsouk/go/simpleGitHub
