@@ -32,3 +32,10 @@ func main()  {
 	fmt.Println("Min: ", min)
 	fmt.Println("Max: ", max)
 }
+
+
+/*
+$ go run forloop.go -10 0.75 3.5 12.345
+Min:  -10
+Max:  12.345
+*/
