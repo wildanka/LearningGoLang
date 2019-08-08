@@ -16,7 +16,15 @@ func main()  {
 	min, _ := strconv.ParseFloat(arguments[1], 64)
 	max, _ := strconv.ParseFloat(arguments[1], 64)
 
-
+	for i := 2; i < count; i++ {
+		n, _ := strconv.ParseFloat(arguments[1], 64)
+		if n < min{
+			min = n
+		}
+		if n > max{
+			max = n
+		}
+	}
 
 	fmt.Println("Min: ", min)
 	fmt.Println("Max: ", max)
