@@ -38,4 +38,14 @@ func main()  {
 $ go run forloop.go -10 0.75 3.5 12.345
 Min:  -10
 Max:  12.345
+
+$ go run forloop.go -10
+Min:  -10
+Max:  -10
+
+seperti yang sudah kita bicarakan sebelumnya, bahwa program yang kita tulis tidak menyaring input yang dimasukkan oleh user, maka yang seharusnya input a b c menghasilkan error tetapi malah tidak
+$ go run forloop.go a b c 10
+Min:  0
+Max:  10
+
 */
