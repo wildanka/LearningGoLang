@@ -1,0 +1,53 @@
+dalam prakteknya, menulis ke dalam log jauh lebih baik daripada menampilkan text yang sama terus menerus di dalam screen (terminal). Alasan sederhananya adalah 2 hal :
+1. output tidak hilang dan tetap ada di dalam file
+2. Anda bisa mencari dan memproses file log menggunakan tools dari UNIX seperti grep(1), awk(1), dan sed(1), yang mana tidak dapat dilakukan ketika pesan sudah tercetak oleh terminal
+
+"log package" menawarkan banyak function untuk mengirim output ke "syslog server" di dalam sebuah mesin UNIX
+daftar function tersebut adalah sebagai berikut:
+log.Printf()
+log.Print()
+log.Println()
+log.Fatalf()
+log.Fatalln()
+log.Panic()
+log.Panicln()
+log.Panicf()
+
+
+#Logging Levels:
+"logging level" adalah nilai yang menyatakan tingkatan dari log entry. terdapat bermacam-macam loggng levels termasuk:
+debug,
+info,
+notice,
+warning,
+err,
+crit, 
+alert,
+emerg 
+(urutan terbalik berdasarkan tingkat urgensinya)
+
+#Logging Facilities
+Logging facility adalah category yang digunakan pada logging information. nilai dari bagian logging facility bisa berupa:
+auth
+authpriv
+cron
+daemon
+kern,
+lpr,
+mail,
+mark,
+news,
+syslog, 
+user, 
+UUCP, 
+local0,
+local1,
+local2,
+local3,
+local4,
+local5,
+local6,
+local7
+
+semuanya didefinisikan di dalam /etc/syslog.conf, /etc/rsyslog.conf. ataupun file lainnya , tergantung pada proses server yang digunakan untuk "system logging" pada mesin UNIX Anda. hal iini berarti bahwa, jika sebuah logging facility tidak didefinisikan dan tidak ditangani dengan demikian (cara seperti di atas), "log messages" yang kita kirimkan mungkin saja di "ignore" lalu hilang.
+
