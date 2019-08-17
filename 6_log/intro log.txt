@@ -51,3 +51,4 @@ local7
 
 semuanya didefinisikan di dalam /etc/syslog.conf, /etc/rsyslog.conf. ataupun file lainnya , tergantung pada proses server yang digunakan untuk "system logging" pada mesin UNIX Anda. hal iini berarti bahwa, jika sebuah logging facility tidak didefinisikan dan tidak ditangani dengan demikian (cara seperti di atas), "log messages" yang kita kirimkan mungkin saja di "ignore" lalu hilang.
 
+A Go program that sends information to log files (32, 47 of 598)
